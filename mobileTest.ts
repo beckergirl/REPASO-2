@@ -10,8 +10,12 @@ let samsung: Mobile = new Mobile ("samsung Galaxy", "samsung", "blanco","galaxy 
 console.log(samsung);
 
 
-export let myMobiles = [ nokia, iphone, samsung];
+export let myMobiles = [nokia, iphone, samsung];
 console.log(myMobiles);
+
+nokia.showCharacteristics();
+iphone.showCharacteristics();
+
 
 
 

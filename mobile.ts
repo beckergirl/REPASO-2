@@ -1,4 +1,4 @@
-import { myMobiles } from "./mobileTest"
+import { myMobiles } from "./mobileTest" 
 
 export class Mobile{
 
@@ -64,10 +64,19 @@ export class Mobile{
             return mobiles.push(myMobiles[i]);
 
         }
-    }
-  }
+    } 
+    public showCharacteristics(){
+
+        let mensaje = "The characteristics of the mobile name are: " + "\n" +
+        "Name: " + this.name + "\n" + "Trademark: " + this.trademark + "\n" + "Model: " +
+        this.model + "\n" + "Color: " + this.color+ "\n" + "Price: " + this.price;
+
+        return mensaje;
+   }
+
+}
 
 
+/* let telefonoMiCasa: Mobile = new Mobile("nokia5","Nokia","modelo Z","negro", 543); */
+/* console.log(telefonoMiCasa); */
 
-let telefonoMiCasa: Mobile = new Mobile("nokia5","Nokia","modelo Z","negro", 543);
-console.log(telefonoMiCasa);

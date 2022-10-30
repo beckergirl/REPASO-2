@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+exports.myMobiles = void 0;
+var mobile_1 = require("./mobile");
+var nokia = new mobile_1.Mobile("nokia 3310", "Nokia", "negro", "vintage 3310", 90);
+console.log(nokia);
+var iphone = new mobile_1.Mobile("iphone 14Pro", "apple", "plateado", "14 pro", 1.469);
+console.log(iphone);
+var samsung = new mobile_1.Mobile("samsung Galaxy", "samsung", "blanco", "galaxy Zlip4", 1099);
+console.log(samsung);
+exports.myMobiles = [nokia, iphone, samsung];
+console.log(exports.myMobiles);
+nokia.showCharacteristics();
+iphone.showCharacteristics();
